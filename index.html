@@ -12,128 +12,23 @@
 <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
 <meta charset="UTF-8">
 <title>Choosing typography for web design</title>
-<style type="text/css">
-	
-	body {
-		margin: 0;
-	}
-	
-	header {
-		background-color:#00B5FF;
-		padding: 1px;
-		padding-left: 200px;
-		padding-right: 200px;
-	}
-	
-	footer {
-		font-family: 'Jura', sans-serif;
-		color: white;
-		background-color: violet;
-		padding: 1px;
-		
-	}
-	
-	h1 {
-		color:#FFFFFF;
-		font-family: 'Orbitron', sans-serif;
-		font-size: 6em;
-	}
-	
-	h2 {
-		color:#03B4FE;
-		font-family: 'Michroma', sans-serif;
-		font-size: 3em;
-		padding-left: 200px;
-		padding-right: 200px;
-	}
-	
-	h5 {
-		color: white;
-		font-family: 'Jura', sans-serif;
-		font-size: 1em;
-	}
-	
-	h6 {
-		color: white;
-		font-family: 'Jura', sans-serif;
-		font-size: 1em;
-	}
-	
-	h7 {
-		color: white;
-		font-family: 'Orbitron', sans-serif;
-		font size: 3em;
-	}
-	
-	p {
-		font-family: 'Jura', sans-serif;
-		padding-left: 200px;
-		padding-right: 200px;
-		font-size: 2em;
 
-	}
-	
-	a {
-		color: violet;
-		font family: 'Jura', sans-serif;
-		text-decoration: none;
-		font size: 1em;
-	}
-	
-	a:hover {
-		color: #03B4FE;
-	}
-	
-	.button {
-		color: white;
-		font-family: 'Jura', sans-serif;
-		background-color: violet;
-		padding: 10px;
-		text decoration: none;
-	}
-	
-	.button:hover {
-		background-color: #03B3FE;
-		color: white;
-	}
-	
-	.footerlink {
-		color: white;
-		text-decoration:underline;
-		font-family: 'Jura', sans-serif;
-	}
-	
-	.footerlink:hover {
-		color:yellow;
-	}
-	
-	.footerheader {
-		font-family: 'Orbitron', sans-serif;
-		color: white;
-		font-size: 2em;
-	}
-	
-	.headerlink {
-		color: white;
-		text-decoration:underline;
-	}
-	
-	.headerlink:hover {
-		color: yellow
-	}
-	
-	.quote {
-		font-family: 'Orbitron', sans-serif;
-		
-	}
-</style>
-	
+<link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 
-<header>
+<ul class="nav">
+  <li><a href="about.html">About</a></li>
+  <li><a class="active" href="typography.html">Typography</a></li>
+  <li><a href="principles.html">Principles</a></li>
+  <li><a href="color.html">Color</a></li>
+</ul>
 
+<img src="img/typography_thingy.png" class="headerimage"/>
+	
+<header>
+	
 <h1>Choosing typography for web design: 5 things you need to consider</h1>
 
 	<h5>by Renee Fleck in <a href="https://dribbble.com/stories/categories/process" target="_blank" class="headerlink">Process</a></h5>
@@ -158,13 +53,13 @@
 	
 	<p>Make a list of what you need so that when you start exploring typefaces you can look at how they’ll appear at different sizes and in different styles based on your actual project, and not some theoretical idea of what’s necessary.</p>
 
-<h2>1. Tone and Mood</h2>
+<h2 class="subheader">1. Tone and Mood</h2>
 	
 	<p>One of the most important determinations when planning the typography for any website is to decide what the tone and mood of the site should be. Is it formal or casual? Playful or serious? Modern or traditional?</p>
 	
 	<p>Once you know the tone the project should have, you can eliminate a lot of typeface options. You’re not going to use a font like Baskerville for a playful, modern site. Just like you wouldn’t use Futura for a site that’s supposed to be formal and traditional.</p>
 
-<h2><q>Decide what the tone and mood of the site should be. Is it formal or casual? Playful or serious? Modern or traditional?</q></h2>
+<h2 class="quote"><q>Decide what the tone and mood of the site should be. Is it formal or casual? Playful or serious? Modern or traditional?</q></h2>
 	
 	<p>Create a list of typefaces that seem to fit the tone of your project to refer to as you move through the rest of the considerations below. When you have a narrower list of appropriate choices (as opposed to the tens of thousands of typefaces available), it speeds up the process of narrowing down to your final typeface selections.</p>
 	
@@ -174,7 +69,7 @@
 	
 	<p>One more, inspired by the art of Christa Dichgans. Behance | Instagram</p>
 	
-	<p><a href="https://dribbble.com/shots/10749118-Pop-Art-is-back-in-town" class="button">View on Dribbble</a></p>
+	<p><a href="https://dribbble.com/shots/10749118-Pop-Art-is-back-in-town" class="button">VIEW ON DRIBBBLE</a></p>
 		
   <h2>2. Readability</h2>
 	
@@ -188,17 +83,23 @@
 	
 	<p>Not all typefaces look good at all sizes. Some typefaces that are super readable and look great for body copy end up boring when used for headings or titles. The opposite is also true: display typefaces that look great as titles or headings are often unreadable when used for body text.</p>
 	
-<h2><q>Knowing the scale at which you will use the typefaces in your design allows for more informed design decisions.</q></h2>
+<h2 class="quote"><q>Knowing the scale at which you will use the typefaces in your design allows for more informed design decisions.</q></h2>
 	
 	<p>Knowing the scale at which you will use the typefaces in your design allows for more informed design decisions.</p>
 	
 <h2>4. Combining Typefaces</h2>
 	
+	<div class="leftalign">
+	
+	<img src="img/combiningtype.png" width="384" height="216" alt="combining typefaces" class="floatimage"/>
+		
 	<p>There’s nothing that says you have to use more than one typeface (or type family) in your design. There are some excellent examples of websites that only use one typeface, such as the <a href="https://stripe.com/">Stripe</a> site or <a href="https://ayakaito.com/">Akaya B. Ito’s site.</a></p>
 	
 	<p>That said, using more than one typeface is a great way to add both visual interest and reinforce your site’s visual hierarchy. There are a few things to consider when picking typefaces to use together:</p>
+		
+	</div>
 	
-<h2><q>Using more than one typeface is a great way to add both visual interest and reinforce your site’s visual hierarchy.</q></h2>
+<h2 class="quote"><q>Using more than one typeface is a great way to add both visual interest and reinforce your site’s visual hierarchy.</q></h2>
 	
 	<p> - Figure out the main typeface you want to use. This could be either the type for your body copy or for your headlines. But you’ll want a starting place.</p>
 	
@@ -216,7 +117,7 @@
 	
 	<p>by <a href="https://dribbble.com/lolak6">LOLA KEKENADZE</a></p>
 	
-	<p><a class="button">View on Dribbble</a></p>
+	<p><a class="button">VIEW ON DRIBBBLE</a></p>
 	
 <h2>5. Licensing</h2>
 	
@@ -232,6 +133,7 @@
 	
 	<p>About the Author — Cameron Chapman: Editor. Blogger. Author. Designer. Copywriter. Marketer. Entrepreneur. Speaker. Consultant. Coach. I wear a lot of hats. What most of them have in common, though, is storytelling.</p>
 
+	<p><a href="https://dribbble.com/" class="button">DRIBBBLE</a></p>
 </section>
 	
 <footer>
@@ -245,6 +147,7 @@
 	
 	<p>Find more Process stories on our blog Courtside. Have a suggestion? Contact stories@dribbble.com.</p>
 	
+	<p>Images made by Jared Horsfall. Font used for "typography_thingy" image is Digifit, a free for commercial use font created by ChaosFonts</p>
 </footer>
 	
 </body>
